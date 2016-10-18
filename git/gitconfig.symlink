@@ -1,11 +1,8 @@
 [hub]
   protocol = https
 [user]
-  name = Amo Wu
-  email = amo260@gmail.com
-  signingkey = E77D0CB6
-[credential]
-  helper = osxkeychain
+  name = kevenking
+  email = kevenking@gmail.com
 [color]
   diff = auto
   status = auto
@@ -13,7 +10,6 @@
   log = auto
   ui = true
 [core]
-  excludesfile = ~/.gitignore
   editor = vim
 [help]
   autocorrect = 1
@@ -34,12 +30,7 @@
   tool = sourcetree
 [mergetool]
   keepBackup = false
-[mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
-[commit]
-  gpgsign = true
